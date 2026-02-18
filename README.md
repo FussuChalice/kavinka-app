@@ -1,3 +1,5 @@
+<img width="5320" height="1024" alt="image" src="https://github.com/user-attachments/assets/9f3de366-4041-4935-b199-90501b0a1a7d" />
+
 # KAVINKA Mobile App
 
 ## Пітч
