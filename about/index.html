@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Проєкт Kavinka — Головна</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #ffffff;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+
+      header {
+        margin-bottom: 32px;
+      }
+
+      .logo {
+        width: 120px;
+        height: auto;
+        margin-bottom: 16px;
+      }
+
+      nav {
+        margin-bottom: 32px;
+      }
+
+      nav a {
+        margin: 0 12px;
+        text-decoration: none;
+        color: #0044cc;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        text-align: left;
+      }
+
+      section {
+        margin-bottom: 32px;
+      }
+
+      footer {
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+        margin-top: 40px;
+        font-size: 14px;
+        color: #555;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: 0;
+        background: black;
+        color: white;
+        padding: 8px;
+      }
+
+      .skip-link:focus {
+        left: 10px;
+        top: 10px;
+      }
+
+      a:focus {
+        outline: 3px solid #444;
+        outline-offset: 2px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      figure {
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      figcaption {
+        font-size: 14px;
+        color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#main" class="skip-link">Перейти до основного змісту</a>
+
+    <div class="container">
+      <header>
+        <img
+          src="../assets/logo_512.png"
+          alt="Логотип проєкту Kavinka"
+          class="logo"
+        />
+        <h1>Проєкт Kavinka</h1>
+        <p>
+          Мобільний застосунок для замовлення та доставки кави,<br />
+          а також бонусної програми в мережі кав’ярень Kavinka
+        </p>
+      </header>
+
+      <nav aria-label="Головна навігація">
+        <a href="index.html" aria-current="page">Головна</a>
+        <a href="topic.html">Опис</a>
+        <a href="contacts.html">Контакти</a>
+      </nav>
+
+      <main id="main">
+        <section>
+          <h2>Про проєкт</h2>
+          <p>
+            Kavinka — це інноваційний застосунок для шанувальників кави, що
+            дозволяє:
+          </p>
+          <ul>
+            <li>Замовляти напої та їжу онлайн без черг</li>
+            <li>Отримувати новини та пропозиції від нашої мережі</li>
+            <li>Отримувати бонуси за кожне замовлення та використовувати їх</li>
+            <li>Слідкувати за історією замовлень та активними акціями</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Основні можливості</h2>
+          <ul>
+            <li>Каталог напоїв та страв з описом і фото</li>
+            <li>Онлайн-оплата та збереження платіжних карт (симуляція)</li>
+            <li>Швидка зміна кав’ярні</li>
+            <li>Покупка міксів</li>
+            <li>Програма лояльності з бонусами та спеціальними пропозиціями</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Наші переваги</h2>
+          <ul>
+            <li>Мережа кав’ярень у багатьох містах України</li>
+            <li>Швидка доставка кави додому або в офіс</li>
+            <li>Простий і зручний інтерфейс застосунку</li>
+            <li>Акції та персональні знижки для постійних клієнтів</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <nav aria-label="Навігація в підвалі">
+          <a href="index.html">Головна</a>
+          <a href="contacts.html">Контакти</a>
+          <a href="#">Політика конфіденційності</a>
+        </nav>
+        <p>© 2026 Проєкт Kavinka</p>
+      </footer>
+    </div>
+  </body>
+</html>

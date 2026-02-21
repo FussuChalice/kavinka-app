@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Проєкт Kavinka — Контакти</title>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #ffffff;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+
+      header {
+        margin-bottom: 16px;
+      }
+
+      .logo {
+        width: 120px;
+        height: auto;
+        margin-bottom: 8px;
+      }
+
+      nav {
+        margin-bottom: 16px;
+      }
+
+      nav a {
+        margin: 0 8px;
+        text-decoration: none;
+        color: #0044cc;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        text-align: left;
+      }
+
+      section {
+        margin-bottom: 32px;
+      }
+
+      footer {
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+        margin-top: 40px;
+        font-size: 14px;
+        color: #555;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: 0;
+        background: black;
+        color: white;
+        padding: 8px;
+      }
+
+      .skip-link:focus {
+        left: 10px;
+        top: 10px;
+      }
+
+      a:focus,
+      input:focus,
+      textarea:focus,
+      button:focus {
+        outline: 3px solid #444;
+        outline-offset: 2px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 4px;
+        font-weight: bold;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+      }
+
+      small {
+        display: block;
+        font-size: 12px;
+        color: #555;
+      }
+
+      .breadcrumbs {
+        margin-bottom: 24px;
+        font-size: 14px;
+        text-align: left;
+      }
+      .breadcrumbs a {
+        text-decoration: none;
+        color: #0044cc;
+        margin-right: 5px;
+      }
+      .breadcrumbs span {
+        margin-right: 5px;
+      }
+
+      button {
+        padding: 10px 16px;
+        background-color: #0044cc;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      button:hover {
+        background-color: #002a99;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#main" class="skip-link">Перейти до основного змісту</a>
+
+    <div class="container">
+      <header>
+        <img
+          src="../assets/logo_512.png"
+          alt="Логотип проєкту Kavinka"
+          class="logo"
+        />
+        <h1>Проєкт Kavinka</h1>
+        <p>Контактна форма для зв’язку з командою застосунку</p>
+      </header>
+
+      <nav aria-label="Головна навігація">
+        <a href="index.html">Головна</a>
+        <a href="topic.html">Опис</a>
+        <a href="contacts.html" aria-current="page">Контакти</a>
+      </nav>
+
+      <nav class="breadcrumbs" aria-label="Хлібні крихти">
+        <a href="index.html">Головна</a> <span>›</span>
+        <span>Контакти</span>
+      </nav>
+
+      <main id="main">
+        <section>
+          <h2>Зв’яжіться з нами</h2>
+          <form method="post">
+            <fieldset>
+              <legend>Ваші контактні дані</legend>
+
+              <div>
+                <label for="name">Ім’я *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div>
+                <label for="email">Електрона пошта *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div>
+                <label for="phone">Телефон</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="\+380\d{9}"
+                  aria-describedby="phoneHelp"
+                  title="Номер у форматі +380XXXXXXXXX"
+                />
+                <small id="phoneHelp"
+                  >Формат українського номера: +380XXXXXXXXX</small
+                >
+              </div>
+
+              <div>
+                <label for="message">Повідомлення *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  minlength="10"
+                  required
+                  aria-describedby="msgHelp"
+                ></textarea>
+                <small id="msgHelp"
+                  >Введіть ваше повідомлення не менше 10 символів</small
+                >
+              </div>
+
+              <div>
+                <button type="submit">Відправити</button>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <nav aria-label="Навігація в підвалі">
+          <a href="index.html">Головна</a>
+          <a href="contacts.html">Контакти</a>
+          <a href="#">Політика конфіденційності</a>
+        </nav>
+        <p>© 2026 Проєкт Kavinka</p>
+      </footer>
+    </div>
+  </body>
+</html>
